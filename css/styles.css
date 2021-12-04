@@ -624,6 +624,12 @@ button:hover {
 .footer-social-item:last-child {
   margin-right: 0;
 }
+.subscribe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 .backdrop {
   width: 100vw;
