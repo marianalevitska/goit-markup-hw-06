@@ -442,13 +442,17 @@
             </li>
         </ul>
         </div>
-        <div class="container subscribe"> 
+        <div class="container-2 subscribe"> 
             <h4 class="h4">Подпишитесь на рассылку</h4>
-            <form name="subscribe-form" autocomplete="on" novalidate>
-                <label>
-                    <input type="email" name="email" placeholder="E-mail"/>
-                </label>
-                <button type="submit">Submit</button>
+            <form name="subscribe-form" class="subscribe-form" autocomplete="on" novalidate>
+                <input type="email" name="email" placeholder="E-mail" class="form-input"/>
+                <button type="submit" class="submit-btn">Подписаться 
+                <svg class="send-icon"
+                width="24px"
+                height="24px">
+                <use href="./images/icons.svg#icon-send" ></use>
+                </svg>
+            </button>
             </form>
         </div>
         </div>
