@@ -698,6 +698,7 @@ button:hover {
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
   transition: transform 200ms;
+  padding: 40px;
 }
 .modal-close {
   position: absolute;
@@ -718,6 +719,115 @@ button:hover {
   opacity: 0;
   pointer-events: none;
 }
+.modal-form {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  top: 104px;
+  left: 53px;
+}
+.modal-icon-1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 53px;
+}
+.modal-icon-2 {
+  position: absolute;
+  top: 240px;
+  left: 53px;
+}
+.modal-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.modal-text {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-top {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.form-top-1 {
+  position: absolute;
+  top: 437px;
+  left: 76.38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.checkbox {
+  position: absolute;
+  top: 437px;
+  left: 76.38px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+::placeholder {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-link {
+  color: #2196f3;
+}
+.modal-btn {
+  position: absolute;
+  top: 491px;
+  left: 164px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  width: 200px;
+  height: 50px;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 */
 
 :root {
