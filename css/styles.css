@@ -729,8 +729,7 @@ button:hover {
 }
 .modal-icon-1 {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 172px;
   left: 53px;
 }
 .modal-icon-2 {
