@@ -459,46 +459,48 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal" >
-            <button type="button" class="modal-close" data-modal-close>
-                <svg class="close-icon" width="18px" height="18px">
-                    <use href="./images/icons.svg#icon-close-black">
-                    </use>
-                </svg>
+            <button type="button" class="modal-close" data-modal-close><svg class="close-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close-black">
+                </use>
+            </svg>
             </button>
+          
             <p class="modal-title">Оставьте свои данные мы вам перезвоним</p>
             <form class="form" name="modal_form" autocomplete="on" novalidate>
             <div class="modal-form-field">
                 <label class="form-top">Имя</label>
+                <input type="text" name="name" class="modal-input" />
                 <svg class="modal-icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
-                <input type="text" name="name" class="modal-input" />
             </div>
             <div class="modal-form-field">
                 <label class="form-top">Телефон</label>
-                <svg class="modal-icon" width="18px" height="18px">
-                        <use href="./images/icons.svg#icon-phone-black"></use>
-                    </svg>
+               
                     <input 
                     type="tel" 
                     name="phone_number"
-                    class="modal-input" />
+                    class="modal-input" /> 
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
                 </div>
                     <div class="modal-form-field">
                 <label class="form-top">Почта</label>
+                <input type="email" name="email" class="modal-input" />
                 <svg class="modal-icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
-                <input type="email" name="email" class="modal-input" />
             </div>
             <div class="modal-form-field">
                 <label class="form-top">Комментарий</label>
                 <textarea name="feedback" rows="5" placeholder="Введите текст" class="modal-text"></textarea>
             </div>
             <div class="modal-form-field">
-                <label class="form-top-1"></label>
-                <input type="checkbox" name="agree" value="checkbox" class="checkbox" />
-                Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
+                
+                <input type="checkbox" name="agree" id="modal-check" class="modal-check visually-hidden" />
+                <label class="modal-check-text" for="modal-check">Соглашаюсь с рассылкой и принимаю <a href=""
+                        class="checkbox-link">Условия договора</a></label>
                 </div>
                 <button type="submit" class="modal-btn">Отправить</button>
             </form>
