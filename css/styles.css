@@ -665,6 +665,7 @@ button:hover {
 
 .form-input {
   display: flex;
+  color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -727,7 +728,15 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #fff;
+}
 
+.modal-close:hover .close-icon,
+.modal-close:focus .close-icon {
+  fill: var(--accent-color);
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -736,8 +745,9 @@ button:hover {
 
 .modal-icon {
   position: absolute;
-  top: 29px;
+  top: 50%;
   left: 12px;
+  fill: #212121;
 }
 
 .modal-input:hover,
@@ -745,8 +755,8 @@ button:hover {
   border: 1px solid var(--accent-color);
 }
 
-.modal-input:hover .modal-icon,
-.modal-input:focus .modal-icon {
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
 
@@ -795,27 +805,36 @@ button:hover {
   display: block;
   margin-bottom: 4px;
 }
-.form-top-1 {
-  position: absolute;
-  top: 437px;
-  left: 76.38px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-  padding: 12px 16px;
-}
-.checkbox {
+
+.modal-check {
   position: absolute;
   top: 437px;
   left: 76.38px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
+.modal-check-text {
+  font-size: 14px;
+  color: #757575;
+  display: flex;
+}
+.modal-check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  margin-right: 8.38px;
+  display: block;
+  border-radius: 2px;
+}
 
+.modal-check:checked + .modal-check-text::before {
+  background-image: url(../images/icon\ check.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
 .checkbox-link {
   color: #2196f3;
 }
@@ -835,6 +854,10 @@ button:hover {
   height: 50px;
   border: none;
 }
+.modal-btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 textarea {
   resize: none;
   padding: 12px 16px;
@@ -1713,6 +1736,7 @@ footer {
 
 .form-input {
   display: flex;
+  color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   width: 358px;
   height: 50px;
