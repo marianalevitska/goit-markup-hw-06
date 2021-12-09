@@ -467,40 +467,39 @@
             </button>
             <p class="modal-title">Оставьте свои данные мы вам перезвоним</p>
             <form class="form" name="modal_form" autocomplete="on" novalidate>
-                <label class="form-top">Имя
-                    <svg class="modal-icon" width="18px" height="18px">
-                        <use href="./images/icons.svg#icon-person-black"></use>
-                    </svg>
-                    <input 
-                    type="text" 
-                    name="name"
-                    class="modal-input"/>
-                </label>
-                <label class="form-top">Телефон
-                    <svg class="modal-icon-1" width="18px" height="18px">
+            <div class="modal-form-field">
+                <label class="form-top">Имя</label>
+                <svg class="modal-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+                <input type="text" name="name" class="modal-input" />
+            </div>
+            <div class="modal-form-field">
+                <label class="form-top">Телефон</label>
+                <svg class="modal-icon" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                     <input 
                     type="tel" 
                     name="phone_number"
                     class="modal-input" />
-                </label>
-                <label class="form-top">Почта
-                    <svg class="modal-icon-2" width="18px" height="18px">
-                        <use href="./images/icons.svg#icon-email-black"></use>
-                    </svg>
-                    <input 
-                    type="email" 
-                    name="email" 
-                    class="modal-input"/>
-                </label>
-                <label class="form-top">Комментарий
-                    <textarea name="feedback" rows="5" placeholder="Введите текст" class="modal-text"></textarea>
-                </label>
-                <label class="form-top-1">
-                    <input type="checkbox" name="agree" value="checkbox class="checkbox" />
-                    Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
-                </label>
+                </div>
+                    <div class="modal-form-field">
+                <label class="form-top">Почта</label>
+                <svg class="modal-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+                <input type="email" name="email" class="modal-input" />
+            </div>
+            <div class="modal-form-field">
+                <label class="form-top">Комментарий</label>
+                <textarea name="feedback" rows="5" placeholder="Введите текст" class="modal-text"></textarea>
+            </div>
+            <div class="modal-form-field">
+                <label class="form-top-1"></label>
+                <input type="checkbox" name="agree" value="checkbox" class="checkbox" />
+                Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
+                </div>
                 <button type="submit" class="modal-btn">Отправить</button>
             </form>
         </div>
